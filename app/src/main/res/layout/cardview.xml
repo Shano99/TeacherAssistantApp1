@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="6dp"
+    app:cardUseCompatPadding="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="subname"
+                        android:layout_marginLeft="7dp"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="center"
+                            android:src="@drawable/pplicon_foreground"/>
+
+                        <TextView
+                            android:id="@+id/dept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="deptname"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/attend"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/cardview_shadow_end_color"
+                        android:src="@drawable/chkicon_foreground"
+                        android:cropToPadding="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="center"
+                    android:cropToPadding="true"
+                    android:src="@drawable/depticon_foreground" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:text="year"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/year"/>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="div"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/div"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/record"
+                    android:src="@drawable/recordicon_foreground"
+                    android:background="@color/cardview_shadow_end_color" />
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/edit"
+                    android:src="@drawable/editicon_foreground"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/cardview_shadow_end_color"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:id="@+id/delete"
+                    android:layout_height="30dp"
+                    android:src="@drawable/delticon_foreground"
+                    android:background="@color/cardview_shadow_end_color"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
