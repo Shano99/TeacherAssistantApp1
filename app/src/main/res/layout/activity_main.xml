@@ -31,6 +31,8 @@
         android:layout_gravity="bottom|end"
         android:src="@drawable/ic_add_black_24dp"
         app:elevation="6dp"
+        android:backgroundTint="@color/blue4"
+
         app:fabSize="normal"
         android:layout_margin="16dp"/>
 

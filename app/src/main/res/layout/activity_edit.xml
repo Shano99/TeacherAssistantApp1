@@ -5,12 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditActivity">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <EditText
         android:id="@+id/mEditDept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="@color/blue4"
         android:hint="Department Name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="@color/blue4"
         android:hint="Year"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,6 +72,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/blue4"
         android:text="Department"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -82,6 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Year"
+        android:textColor="@color/blue4"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,6 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Division"
+        android:textColor="@color/blue4"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,6 +116,7 @@
         android:layout_height="wrap_content"
         android:text="Subject"
         android:textSize="20sp"
+        android:textColor="@color/blue4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
@@ -126,7 +134,8 @@
             android:src="@drawable/ic_save_black_24dp"
             app:elevation="6dp"
             app:fabSize="normal"
+            android:backgroundTint="@color/blue4"
             android:layout_margin="16dp"/>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
+</ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,6 +47,7 @@ public class AddStudentActivity extends AppCompatActivity {
             alltxt.add(txt);
             txt.setHint(roll+". Name of Student ");
             txt.setId(roll);
+            txt.setTextColor(Color.parseColor("#424874"));
             layout.addView(txt);
             --n;
             roll++;
@@ -68,7 +70,7 @@ public class AddStudentActivity extends AppCompatActivity {
                 }
                 boolean isInserted=myDb.insertStudentDetails(strings,classid);
                 if(isInserted){
-                    startActivity(new Intent(AddStudentActivity.this, MainActivity.class));
+                    //startActivity(new Intent(AddStudentActivity.this, MainActivity.class));
                     finish();
                 }
                 else
@@ -86,7 +88,8 @@ public class AddStudentActivity extends AppCompatActivity {
 
             public void onClick(DialogInterface dialog, int which) {
                 if( myDb.deleteClass(Integer.toString(classid)))
-                    startActivity(new Intent(AddStudentActivity.this, MainActivity.class));
+                    //startActivity(new Intent(AddStudentActivity.this, MainActivity.class));
+                    finish();
 
             }
         });

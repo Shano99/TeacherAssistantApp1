@@ -13,6 +13,7 @@
         android:layout_gravity="bottom|end"
         android:src="@drawable/ic_save_black_24dp"
         app:elevation="6dp"
+        android:backgroundTint="@color/blue4"
         app:fabSize="normal"
         android:layout_margin="16dp"/>
     <LinearLayout
@@ -22,6 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SET DATE"
+        android:textColor="@color/blue1"
+        android:backgroundTint="@color/blue4"
         android:id="@+id/setdate"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="30dp"
@@ -33,6 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
+            android:textColor="@color/blue4"
             android:layout_marginTop="30dp"
             android:hint="SET HOUR"
             android:inputType="number" />
@@ -48,6 +52,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginLeft="50dp"
             android:columnCount="5"
+
             android:id="@+id/gridview">
 
         </GridLayout>

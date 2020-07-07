@@ -55,9 +55,10 @@ public class EditActivity extends AppCompatActivity {
                 } else {
                     boolean isEdited = myDb.editClass(Idclass, Dept.getText().toString(), Year.getText().toString(), Division.getText().toString(), Subject.getText().toString());
                     if (isEdited) {
+                        finish();
                         Intent i = new Intent(EditActivity.this, MainActivity.class);
                         startActivity(i);
-                        finish();
+
                     } else
                         Toast.makeText(EditActivity.this, "Class Exists already!!", Toast.LENGTH_SHORT).show();
 
@@ -75,6 +76,9 @@ public class EditActivity extends AppCompatActivity {
 
             public void onClick(DialogInterface dialog, int which) {
                 EditActivity.super.onBackPressed();
+                Intent i = new Intent(EditActivity.this, MainActivity.class);
+                startActivity(i);
+                finish();
 
             }
         });

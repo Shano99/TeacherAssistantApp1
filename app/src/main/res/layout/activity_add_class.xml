@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddClassActivity">
-
-
+    tools:context=".AddClassActivity"
+    android:background="@color/blue1">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <EditText
         android:id="@+id/mDept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+
+        android:textColor="@color/blue4"
         android:hint="Department Name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="@color/blue4"
         android:hint="Year"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="@color/blue4"
         android:hint="Division"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +60,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Total Number Of Students"
+        android:textColor="@color/blue4"
+        android:hint="Number Of Students"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,6 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="@color/blue4"
         android:hint="Subject Name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -88,6 +96,9 @@
             android:src="@drawable/ic_save_black_24dp"
             app:elevation="6dp"
             app:fabSize="normal"
+            android:backgroundTint="@color/blue4"
             android:layout_margin="16dp"/>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

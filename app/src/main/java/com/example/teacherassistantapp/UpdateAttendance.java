@@ -148,11 +148,13 @@ public class UpdateAttendance extends AppCompatActivity {
             public void onClick(View v) {
                 String date=String.valueOf(spinner.getSelectedItem());
                 if(mydb.updateAttendance(classid,date,preabs)){
+                    finish();
                     Intent i = new Intent(UpdateAttendance.this, StatisticsActivity.class);
                     i.putExtra("CLASS_ID",classid);
                     i.putExtra("count",count);
                     startActivity(i);
-                    finish();
+                    
+
 
 
                 }else
@@ -169,6 +171,7 @@ public class UpdateAttendance extends AppCompatActivity {
         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
 
             public void onClick(DialogInterface dialog, int which) {
+                finish();
                 UpdateAttendance.super.onBackPressed();
 
             }

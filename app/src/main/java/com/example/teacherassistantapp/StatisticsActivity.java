@@ -17,6 +17,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class StatisticsActivity extends AppCompatActivity {
     FloatingActionButton Update;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,24 +31,27 @@ public class StatisticsActivity extends AppCompatActivity {
         Update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finish();
                 Intent i = new Intent(StatisticsActivity.this, UpdateAttendance.class);
                 i.putExtra("classid",classid);
                 i.putExtra("count",count);
                 startActivity(i);
-                finish();
+
             }
         });
         TableLayout tab=(TableLayout)findViewById(R.id.table);
         TableRow r1=new TableRow(this);
-        r1.setBackgroundColor(Color.YELLOW);
+        r1.setBackgroundColor(Color.parseColor("#424874"));
 
         TextView roll=new TextView(this);
         TextView Std=new TextView(this);
-        roll.setText("ROLL NO.");
+        roll.setText("R.No.");
+        roll.setTextColor(Color.parseColor("#f4eeff"));
         roll.setTextSize(20);
 
         roll.setPadding(10,10,20,10);
         Std.setText("NAME");
+        Std.setTextColor(Color.parseColor("#f4eeff"));
         Std.setTextSize(20);
         Std.setPadding(10,10,20,10);
         r1.addView(roll);
@@ -66,6 +70,7 @@ public class StatisticsActivity extends AppCompatActivity {
             time[i]=res.getString(1)+"\n(Hour:"+res.getString(2)+")";
             datehour=new TextView(this);
             datehour.setText(time[i]);
+            datehour.setTextColor(Color.parseColor("#f4eeff"));
             datehour.setTextSize(20);
             datehour.setPadding(10,10,20,10);
             r1.addView(datehour);
@@ -82,7 +87,7 @@ public class StatisticsActivity extends AppCompatActivity {
         Cursor res3;
         while (res2.moveToNext()){
             r2=new TableRow(this);
-            r2.setBackgroundColor(Color.BLUE);
+            r2.setBackgroundColor(Color.parseColor("#a6b1e1"));
             stdid=res2.getString(0);
             stdroll=new TextView(this);
             stdroll.setText(res2.getString(2));
@@ -100,10 +105,10 @@ public class StatisticsActivity extends AppCompatActivity {
                 preabs=new TextView(this);
                 if(res3.getString(0).equals("0")){
                     preabs.setText("A");
-                    preabs.setTextColor(Color.RED);}
+                    preabs.setTextColor(Color.parseColor("#f4eeff"));}
                 else{
                     preabs.setText("P");
-                    preabs.setTextColor(Color.GREEN); }
+                    preabs.setTextColor(Color.parseColor("#424874")); }
 
                 preabs.setTextSize(20);
                 preabs.setPadding(10,10,20,10);
@@ -115,6 +120,10 @@ public class StatisticsActivity extends AppCompatActivity {
         }
 
 
+    }
+    @Override
+    public void onBackPressed(){
+        finish();
     }
 
 }

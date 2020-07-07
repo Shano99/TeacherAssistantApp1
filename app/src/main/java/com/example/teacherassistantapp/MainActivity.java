@@ -142,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("count",Integer.parseInt(c));
                 startActivity(i);
 
+
             }
         });
 
@@ -166,7 +167,9 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("DIVISION",div);
                 i.putExtra("SUB_NAME",sub);
                 //YEAR,DEPT_NAME,DIVISION,SUB_NAME
+                finish();
                 startActivity(i);
+
 
             }
         });

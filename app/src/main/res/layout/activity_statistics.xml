@@ -14,6 +14,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/update"
         android:layout_gravity="bottom|end"
         android:src="@drawable/editbtnicon_foreground"
+        android:backgroundTint="@color/blue4"
         app:elevation="6dp"
         app:fabSize="normal"
         android:layout_margin="16dp"/>

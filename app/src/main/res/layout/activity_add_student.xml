@@ -26,6 +26,7 @@
         android:src="@drawable/ic_save_black_24dp"
         app:elevation="6dp"
         app:fabSize="normal"
+        android:backgroundTint="@color/blue4"
         android:layout_margin="16dp"/>
 
 

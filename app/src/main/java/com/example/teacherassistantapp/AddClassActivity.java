@@ -54,6 +54,7 @@ public class AddClassActivity extends AppCompatActivity {
 
                         i.putExtra("classid", Classid);
                         startActivity(i);
+                        finish();
 
 
                     } else
@@ -72,6 +73,7 @@ public class AddClassActivity extends AppCompatActivity {
 
             public void onClick(DialogInterface dialog, int which) {
                 AddClassActivity.super.onBackPressed();
+                finish();
 
             }
         });

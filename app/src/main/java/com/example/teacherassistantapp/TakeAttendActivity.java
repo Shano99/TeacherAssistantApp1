@@ -143,7 +143,7 @@ public class TakeAttendActivity extends AppCompatActivity implements DatePickerD
                     //store to db
                     if(mydb.insertAttendance(Currentdate,SetHour,preabs,classid)){
 
-                        startActivity(new Intent(TakeAttendActivity.this, MainActivity.class));
+                        //startActivity(new Intent(TakeAttendActivity.this, MainActivity.class));
                         finish();
                     }
                     else
@@ -163,6 +163,7 @@ public class TakeAttendActivity extends AppCompatActivity implements DatePickerD
         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
 
             public void onClick(DialogInterface dialog, int which) {
+                finish();
                 TakeAttendActivity.super.onBackPressed();
 
             }
