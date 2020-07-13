@@ -70,7 +70,7 @@ public class AddStudentActivity extends AppCompatActivity {
                 }
                 boolean isInserted=myDb.insertStudentDetails(strings,classid);
                 if(isInserted){
-                    //startActivity(new Intent(AddStudentActivity.this, MainActivity.class));
+                    startActivity(new Intent(AddStudentActivity.this, MainActivity.class));
                     finish();
                 }
                 else

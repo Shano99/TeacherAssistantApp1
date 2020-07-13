@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AddClassActivity.class));
+                finish();
 
             }
         });
@@ -167,8 +168,9 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("DIVISION",div);
                 i.putExtra("SUB_NAME",sub);
                 //YEAR,DEPT_NAME,DIVISION,SUB_NAME
-                finish();
+
                 startActivity(i);
+                finish();
 
 
             }

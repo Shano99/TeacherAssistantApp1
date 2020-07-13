@@ -6,9 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".AddClassActivity"
     android:background="@color/blue1">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+
+
     <EditText
         android:id="@+id/mDept"
         android:layout_width="wrap_content"
@@ -87,18 +86,21 @@
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-29dp"
+        tools:layout_editor_absoluteY="-58dp">
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/mAddClass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/mAddClass"
             android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/blue4"
             android:src="@drawable/ic_save_black_24dp"
             app:elevation="6dp"
-            app:fabSize="normal"
-            android:backgroundTint="@color/blue4"
-            android:layout_margin="16dp"/>
+            app:fabSize="normal" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-</ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

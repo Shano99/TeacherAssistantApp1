@@ -73,6 +73,7 @@ public class AddClassActivity extends AppCompatActivity {
 
             public void onClick(DialogInterface dialog, int which) {
                 AddClassActivity.super.onBackPressed();
+                startActivity(new Intent(AddClassActivity.this, MainActivity.class));
                 finish();
 
             }
